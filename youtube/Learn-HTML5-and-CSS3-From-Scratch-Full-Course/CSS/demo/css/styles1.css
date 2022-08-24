@@ -1,0 +1,33 @@
+/* Element selector */
+h1, h2 {
+  color: green;
+  text-align: center;
+}
+
+/* ID selector */
+#heading {
+  color: aqua;
+  background: gray;
+}
+
+/* Class selector */
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+#title {
+  font-size: 40px;
+}
+.lowcase {
+  text-transform: lowercase;
+}
+
+/* div and span */
+div {
+  color: gray;
+}
+span {
+  text-transform: uppercase;
+}

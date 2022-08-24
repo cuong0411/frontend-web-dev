@@ -1,0 +1,28 @@
+/* INHERITANCE */
+body {
+  color: gray;
+  font-family: monospace;
+  line-height: 1.5em;
+}
+div {
+  color: green;
+  border: 3px solid black;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+
+/* LAST RULE */
+p {
+  color: black;
+}
+p {
+  color: blueviolet;
+}
+
+/* SPECIFICITY MEASUREMENT IN CSS */
+/* UNIVERSAL SELECTOR */
+* {
+  color: cadetblue
+}
