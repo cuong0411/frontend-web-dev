@@ -5,7 +5,7 @@ body {
   line-height: 1.5em;
 }
 div {
-  color: green;
+  color: rgba(0, 128, 51, 0.381);
   border: 3px solid black;
 }
 h1 {
