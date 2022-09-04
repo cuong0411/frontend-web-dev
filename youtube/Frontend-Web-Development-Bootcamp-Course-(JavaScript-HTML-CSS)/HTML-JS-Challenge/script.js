@@ -12,6 +12,11 @@ function clearAll() {}
 function showMeme() {
   // Value is a string representing image URL
   const randomMemeUrl = getRandomData("memes");
+  const newElement = document.createElement('img');
+  newElement.setAttribute('src', randomMemeUrl);
+
+  const container = document.querySelector('.meme-content');
+  container.appendChild(newElement);
 }
 
 /**
