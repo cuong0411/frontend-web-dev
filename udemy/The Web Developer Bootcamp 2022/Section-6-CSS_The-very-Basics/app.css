@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  font-weight: 400;
+  text-decoration: #f78120 underline wavy;
+  letter-spacing: 15px;
+  font-size: 45px;
+  font-family:monospace;
+}
+
+h2 {
+  color: teal;
+}
+
+button {
+  background-color: cyan;
+  color: magenta;
+}
+
+p {
+  color: olive;
+}
+
