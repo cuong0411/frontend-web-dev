@@ -1,0 +1,26 @@
+/* fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  /* add padding doesn't affect the width of element */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  /* The flex container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* will not work if height is not available */
+  justify-content: center;
+  height: 100vh;
+
+  /* no scroll bar */
+  overflow: hidden;
+
+  /* center element */
+  margin: 0;
+}
