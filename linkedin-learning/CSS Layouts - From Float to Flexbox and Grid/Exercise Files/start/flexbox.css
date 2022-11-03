@@ -25,6 +25,8 @@ h1, h2 {
 .container {
   color: white;
   font-family: helvetica, arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
