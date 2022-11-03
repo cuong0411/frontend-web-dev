@@ -25,6 +25,8 @@ h1, h2 {
 .container {
   color: white;
   font-family: helvetica, arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 header {
@@ -41,4 +43,36 @@ aside {
 }
 footer {
   background: darkslateblue;
+}
+
+/* two-column layout */
+@media (min-width: 600px) {
+  nav {
+    width: 25%;
+    float: left;
+  }
+  main {
+    width: 75%;
+    float: left;
+  }
+  aside {
+    /* back to normal flow */
+    clear: both;
+  }
+}
+
+/* three-column layout */
+@media (min-width: 850px) {
+  main {
+    width: 50%;
+  }
+  aside {
+    clear:none;
+    width: 25%;
+    float: left;
+  }
+  footer {
+    /* back to normal flow */
+    clear:both;
+  }
 }
