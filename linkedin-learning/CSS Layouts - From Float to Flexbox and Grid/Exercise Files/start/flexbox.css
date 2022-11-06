@@ -30,17 +30,27 @@ h1, h2 {
 }
 
 header {
+  flex: 1 0 100%;
   background: skyblue;
+  order: 1;
 }
 main {
   background: slategray;
+  order: 3;
+  flex: 1 1 500px;
 }
 nav {
   background: cadetblue;
+  order: 2;
+  flex: 1 0 200px;
 }
 aside {
   background: seagreen;
+  flex: 1 0 200px;
+  order: 4
 }
 footer {
   background: darkslateblue;
+  flex: 1 0 100%;
+  order: 5;
 }
