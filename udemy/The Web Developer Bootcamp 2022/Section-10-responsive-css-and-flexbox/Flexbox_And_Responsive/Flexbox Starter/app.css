@@ -11,10 +11,17 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
+
+    /* default */
+    flex-direction: row;
+
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
     /* border: none; */
 }
 
 #container div {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
