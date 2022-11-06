@@ -10,5 +10,11 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
+    /* border: none; */
 }
 
+#container div {
+  width: 200px;
+  height: 200px;
+}
