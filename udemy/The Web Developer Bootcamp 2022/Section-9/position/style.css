@@ -20,21 +20,26 @@ div {
 
 #relative #middle {
   position: relative;
+
+  /* offset it's position */
   top: 100px;
-  /* left: 148px; */
 }
 
 #absolute {
+  /* the ancestor got positioned */
   position: relative;
 }
 
 #absolute #middle {
+  /* the element is removed from the flow */
+  /* relative to is's ancestor if it's positioned */
   position: absolute;
   top: 1px;
   left: 1px;
 }
 
 #fixed #middle {
+  /* removed from the normal document flow */
   position: fixed;
   top: 0;
   left: 0;
