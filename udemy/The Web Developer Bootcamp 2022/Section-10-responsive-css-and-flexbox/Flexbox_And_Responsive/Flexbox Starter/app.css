@@ -19,12 +19,13 @@ h1 {
     /* justify-content: space-around; */
     justify-content: flex-start;
 
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
 
     /* border: none; */
 }
 
 #container div {
-  width: 600px;
+  width: 100px;
   height: 100px;
 }
