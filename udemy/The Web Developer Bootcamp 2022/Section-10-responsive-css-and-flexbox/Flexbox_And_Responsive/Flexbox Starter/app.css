@@ -12,9 +12,10 @@ h1 {
     border: 5px solid #003049;
     display: flex;
     /* border: none; */
+    justify-content: center;
 }
 
 #container div {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
