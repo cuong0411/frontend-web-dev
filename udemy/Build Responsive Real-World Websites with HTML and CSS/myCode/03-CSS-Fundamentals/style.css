@@ -86,3 +86,19 @@ li:last-child {
 li:nth-child(odd) {
   color: red;
 }
+
+/* Misconception: this won't work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+
+/* link without attribute href */
+/* a {
+  color: red;
+} */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
