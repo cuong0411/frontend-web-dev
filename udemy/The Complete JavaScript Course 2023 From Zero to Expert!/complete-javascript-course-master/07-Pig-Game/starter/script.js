@@ -12,15 +12,38 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-// Starting condition
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceEl.classList.add('hidden');
-
 const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
+
+const init = function () {
+  // reassign
+  scores[0] = 0;
+  scores[1] = 0;
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  // reset the score on the interface
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+
+  // if the class is there, js do nothing
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+  player0El.classList.add('player--active');
+
+  // if the class is not there, js do nothing
+  player1El.classList.remove('player--active');
+
+  diceEl.classList.add('hidden');
+};
+
+// call the function when page loads
+init();
 
 const switchPlayer = function () {
   // Switch to next player
@@ -62,7 +85,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
 
     // check total socre >= 100
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 10) {
       // finish the game
       playing = false;
       diceEl.classList.add('hidden'); // hide the dice
@@ -79,3 +102,26 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+// // New game functionality
+// btnNew.addEventListener('click', function () {
+//   // // remove winner
+//   // document
+//   //   .querySelector(`.player--${activePlayer}`)
+//   //   .classList.remove('player--winner');
+
+//   // // player 0 play first
+//   // if (!player0El.classList.contains('player--active')) {
+//   //   player0El.classList.add('player--active');
+//   // }
+//   // playing = true;
+//   // currentScore = 0;
+//   // activePlayer = 0;
+//   // scores[0] = 0;
+//   // scores[1] = 0;
+//   // score0El.textContent = 0;
+//   // score1El.textContent = 0;
+//   // current0El.textContent = 0;
+//   // current1El.textContent = 0;
+// });
+btnNew.addEventListener('click', init);
