@@ -120,8 +120,6 @@ ul {
   margin-bottom: 20px;
 }
 
-
-
 li:first-child {
   font-weight: bold;
 }
@@ -145,6 +143,15 @@ article p:first-child {
 /* a {
   color: red;
 } */
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
 a:link {
   color: #1098ad;
   text-decoration: none;
