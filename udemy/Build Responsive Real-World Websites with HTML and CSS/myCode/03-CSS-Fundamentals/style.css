@@ -8,11 +8,15 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+
+  /* absolute for button */
+  position: relative;
 }
 
 .container {
   width: 700px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 nav {
@@ -175,4 +179,14 @@ a:active {
 .post-img {
   width: 100%;
   height: auto;
+}
+
+/* button */
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
