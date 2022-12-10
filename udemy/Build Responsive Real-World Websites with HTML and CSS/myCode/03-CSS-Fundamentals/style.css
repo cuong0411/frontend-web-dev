@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   /* font-family: sans-serif; */
   margin-bottom: 30px;
 }
@@ -189,4 +189,25 @@ button {
   position: absolute;
   bottom: 30px;
   right: 30px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  color: #444;
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -15px;
 }
