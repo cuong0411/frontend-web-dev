@@ -17,11 +17,17 @@
 
   /* transform */
   transform: translate(100px, 100px) scale(0.5) rotate(45deg);
+  transition: transform 3s ease-in;
 }
 
 body {
   /* center button */
   text-align: center;
+}
+
+.demo-2 {
+  border: 1px solid black;
+  padding-bottom: 20px;
 }
 
 button {
@@ -41,10 +47,12 @@ button:hover {
 @keyframes scaleIn {
   0% {
     transform: scale(0.3);
+    color: black
   }
 
   85% {
     transform: scale(1.1);
+    color: red
   }
 
   100% {
@@ -52,7 +60,19 @@ button:hover {
   }
 }
 
-h2 {
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+.animation {
   font-size: 10rem;
   font-family: sans-serif;
   color: #DCF2B0;
@@ -61,6 +81,80 @@ h2 {
   text-shadow: 3px 3px 0px #59c3c3;
 
   /* animation */
-  animation-name: scaleIn;
+  /* animation-name: scaleIn;
   animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards; */
+  /* animation-iteration-count: 3; */
+  animation: wiggle 0.7s infinite ease;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+  }
+
+  25% {
+    transform: translate(200px, 0px) scale(1.1);
+  }
+
+  50% {
+    transform: translate(200px, 100px) scale(1.2);
+  }
+
+  75% {
+    transform: translate(0px, 100px) scale(1.1);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.robot {
+  height: 100px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: 3;
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+}
+
+.demo-4 {
+  margin-bottom: 100px;
+}
+
+.demo-4 h2 {
+  margin: 100px auto;
+  overflow: hidden;
+  border-right: .15em solid #CE2D4F;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  display: inline-block;
+  animation: typing 3s steps(14) both, blinking 0.5s 3;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes blinking {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #ce2d4f;
+  }
 }
