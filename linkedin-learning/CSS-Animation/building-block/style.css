@@ -1,0 +1,52 @@
+.cloud01 {
+  animation: float 25s ease-in-out infinite;
+}
+
+.cloud02 {
+  animation: float 25s 5s ease-in-out infinite backwards;
+}
+@keyframes float {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(820px);
+  }
+}
+/* Other styles  */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 800px;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.city,
+.cloud {
+  position: absolute;
+  /* width: 50%; */
+}
+
+.city {
+  z-index: 100;
+}
+
+.cloud02 {
+  top: 76px;
+}
+.cloud01 {
+  top: 30px;
+}
+
+img.cloud {
+  width: 150px;
+}
+.city img {
+  width: 100%;
+}
