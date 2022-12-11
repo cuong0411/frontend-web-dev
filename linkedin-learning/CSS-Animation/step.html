@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1 {
+        color: #433F55;
+        font-family: 'Fira Mono', monospace;
+        overflow: hidden;
+        border-right: .15em solid #CE2D4F;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+
+        animation-name: typing;
+        animation-duration: 3s;
+        animation-timing-function: steps(14);
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+
+      @keyframes blinking {
+
+        0%,
+        100% {
+          border-color: transparent;
+        }
+
+        50% {
+          border-color: #CE2D4F;
+        }
+      }
+
+
+      body {
+        padding-top: 5em;
+        background: #cfcfcf;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <title>Step</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Typing is fun!</h1>
+    </div>
+  </body>
+
+</html>
