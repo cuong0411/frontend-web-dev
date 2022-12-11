@@ -22,6 +22,7 @@ h2 {
 
 span {
   animation: flipUp 2s ease both infinite;
+  transform-origin: 50% 70%;
 }
 
 span:nth-child(2) {
