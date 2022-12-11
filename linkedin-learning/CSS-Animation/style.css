@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  background-color: lightblue;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+
+  /* transform */
+  transform: translate(100px, 100px) scale(0.5) rotate(45deg);
+}
+
+body {
+  /* center button */
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  background-color: aquamarine;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, background-color 0.5s, color .5s 1s;
+}
+
+button:hover {
+  transform: scale(1.3) translateY(-10px);
+  color: red;
+  background-color: greenyellow;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.3);
+  }
+
+  85% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2 {
+  font-size: 10rem;
+  font-family: sans-serif;
+  color: #DCF2B0;
+
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 3px 3px 0px #59c3c3;
+
+  /* animation */
+  animation-name: scaleIn;
+  animation-duration: 2s;
+}
