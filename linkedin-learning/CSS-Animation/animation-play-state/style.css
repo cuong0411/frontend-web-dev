@@ -1,0 +1,97 @@
+h2 {
+  margin: 0;
+  font-size: 7em;
+  font-weight: 900;
+  text-align: center;
+
+  /* 3d animation */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+@keyframes flipUp {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+
+  }
+}
+
+span {
+  animation: flipUp 2s ease both infinite;
+}
+
+span:nth-child(2) {
+  margin-right: 0.15em;
+  animation-delay: 0.2s;
+}
+
+span:nth-child(3) {
+  margin-right: 0.15em;
+  animation-delay: 0.4s;
+}
+
+span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+
+.sticker {
+  animation: rotate 10s linear infinite;
+  animation-play-state: paused;
+}
+
+.sticker:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  /* apply the current styles on the element */
+  /* 0% {
+    transform: rotate(0);
+  } */
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* other styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&display=swap');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+  background: #ce2d4f;
+}
+
+img {
+  width: 200px;
+}
+
+span {
+  display: inline-block;
+  color: #77c6bc;
+}
+
+span:nth-child(2n) {
+  color: #95b8cb;
+}

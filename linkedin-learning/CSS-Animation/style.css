@@ -117,8 +117,7 @@ button:hover {
   animation-duration: 4s;
   animation-fill-mode: both;
   animation-iteration-count: 3;
-  /* animation-direction: reverse; */
-  /* animation-direction: alternate; */
+  animation-direction: reverse;
   animation-timing-function: linear;
 }
 
