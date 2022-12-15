@@ -212,3 +212,11 @@ h2::after {
   right: -25px;
   top: -15px;
 }
+
+/* FLOAT LAYOUT */
+.author-img {
+  float: left;
+}
+.author {
+  /*  */
+}
