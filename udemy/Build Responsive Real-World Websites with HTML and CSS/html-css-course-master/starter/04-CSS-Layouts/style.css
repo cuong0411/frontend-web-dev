@@ -265,3 +265,11 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+
+h1 {
+  float:  left;
+}
+nav {
+  float:  right;
+}
