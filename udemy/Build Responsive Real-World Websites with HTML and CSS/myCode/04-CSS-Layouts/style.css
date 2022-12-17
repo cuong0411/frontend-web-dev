@@ -292,3 +292,10 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
+
+.main-container {
+  display: flex;
+}
+aside {
+  flex: 0 0 auto;
+}
