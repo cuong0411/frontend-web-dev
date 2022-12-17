@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,7 +43,7 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
@@ -54,7 +53,19 @@
         align-items: center;
 
         /* horizontally by default */
-        /* justify-content: center; */
+        justify-content: flex-start;
+
+        gap: 10px;
+      }
+      .el--1 {
+        align-self: flex-end;
+      }
+      .el--6 {
+        order: -1;
+        align-self: center;
+      }
+      .el {
+        /* margin-right: 10px; */
       }
     </style>
   </head>
@@ -67,9 +78,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
-
 </html>
