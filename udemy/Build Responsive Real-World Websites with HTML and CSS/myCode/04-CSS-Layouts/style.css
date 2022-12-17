@@ -22,7 +22,7 @@ body {
 
 nav {
   font-size: 18px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 article {
@@ -37,7 +37,7 @@ article {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 50px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .post-header {
@@ -152,7 +152,7 @@ article p:first-child {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -217,6 +217,7 @@ h2::after {
 }
 
 /* FLOAT LAYOUT */
+/*
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -254,4 +255,40 @@ aside {
 
 footer {
   clear: both;
+}
+*/
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.author-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+}
+.related-post {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 10px;
+  display: block;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
